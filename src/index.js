@@ -1,11 +1,12 @@
 //Imports
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 
 //Settings
 const app = express();
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORTU || 3000);
 app.set('routes', path.join(__dirname, 'routes'))
 
 //Middlewares

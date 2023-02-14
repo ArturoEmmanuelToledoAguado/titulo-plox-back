@@ -1,5 +1,11 @@
+const { Connect } = require('../config/db');
+
+const { nodeItze1: nodo1, nodeItze2: nodo2, nodeItze3: nodo3, nodeItze4: nodo4, nodeArt1: nodo5, nodeArt2:nodo6, nodeArt3:nodo7} = require('../config/keys.js');
+
 const sendFile = (req, res) => {
     res.send(`Here are the files`);
+    Connect(nodeArt1);
+
     // res.json({});
 }
 
